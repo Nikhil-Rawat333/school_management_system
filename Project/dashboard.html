@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | School Management System</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <!-- <h1>Welcome, Admin 👋</h1> -->
+      <h1 id="welcomeText" class="typing-text"></h1>
+      <!-- <button class="logout-btn">
+      <img class="logout" src="https://img.icons8.com/color/96/logout-rounded.png" alt="Logout">
+      Logout</button> -->
+    </header>
+
+    <div class="dashboard-cards">
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/student-male.png" alt="Students">
+        <h3>Manage Students</h3>
+        <p>Add, Edit or View Students</p>
+        <a href="manage-students.html">Go</a>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/money.png" alt="Fees">
+        <h3>Fee Management</h3>
+        <p>Handle fee details</p>
+        <a href="fees.html">Go</a>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/exam.png" alt="Exams">
+        <h3>Exam Schedule</h3>
+        <p>Create/view exam timetable</p>
+        <a href="exams.html">Go</a>
+      </div>
+    <div style="background: linear-gradient(to right, #11998e, #38ef7d);" class="card">
+        <img style="height: 70px;" src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Admission Icon" />
+        <h3>Admission Form</h3>
+        <p>Get Addmission/view last date</p>
+        <a href="admission.html">Go</a>
+      </div>
+    </div>    
+    
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="dashboard-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 My School Management System</p>
+  
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+  
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Facebook" style="color: rgb(52, 52, 240);"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram" style="color: rgb(230, 49, 79);"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter" style="color: rgb(60, 154, 231);"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" aria-label="LinkedIn" style="color: blue;"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+<script>
+  const text = "Welcome Admin 👋";
+  const speed = 100; // typing speed in ms
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      document.getElementById("welcomeText").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeText, speed);
+    }
+  }
+
+  window.onload = typeText;
+</script>
+</html>

@@ -1,0 +1,114 @@
+body {
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb, purple);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  select {
+    display: inline;
+    flex-direction: column;
+    margin: 15px auto;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .students-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .student-card {
+    background: rgb(252, 247, 247);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s ease-in 0.01s;
+  }
+  
+  .student-card .name {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .student-card .gender {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .name {
+      font-size: 19px;
+  }
+  
+  .student-card .status {
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
+  }
+  
+  .present {
+    margin-top: 15px;
+    background-color: #1baf3b;
+}
+  
+  .absent {
+    margin-top: 15px;
+    background-color: #df3b3b;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .students-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+/* //--------------------------- */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .student-card button {
+    margin-top: 18px;
+    margin-right: 5px;
+    padding: 9px 30px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background-color: #3182ce;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #e53e3e;
+    color: white;
+  }
+  

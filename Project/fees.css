@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    /* background: linear-gradient(to right, #6dd5ed, #2193b0); */
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .fees-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .filters {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .fees-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .fees-table th, .fees-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: white;
+    text-align: left;
+  }
+  
+  .fees-table th {
+    background-color: #00000040;
+  }
+
+  #statusFilter {
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  
+  .status-paid {
+    color: #00fa85;
+    font-weight: bold;
+  }
+  
+  .status-unpaid {
+    color: #f51b1b;
+    font-weight: bold;
+  }
+  
+  .action-btn {
+    padding: 5px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    padding: 6px 12px;
+    background: #3498db;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+  /* //------------------------------------// */
+  /* Existing styles remain above... */
+
+/* 🧠 Responsive Design */
+@media (max-width: 768px) {
+  .fees-table {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+
+  .fees-table thead {
+    display: none;
+  }
+
+  .fees-table tr {
+    margin-top: 10px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .fees-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+  }
+
+  .fees-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex-basis: 40%;
+    color: #f2f2f2;
+  }
+
+  .fees-table td:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fees Management</title>
+  <link rel="stylesheet" href="fees.css"/>
+</head>
+<body>
+  <div class="fees-container">
+    <h1 class="page-title">💰 Fees Management</h1>
+
+    <div class="filters">
+      <select id="statusFilter">
+        <option value="all">All</option>
+        <option value="paid">Paid</option>
+        <option value="unpaid">Unpaid</option>
+      </select>
+    </div>
+
+    <div class="fees-table-container">
+      <!-- JS will inject table here -->
+    </div>
+  </div>
+
+  <script src="fees.js"></script>
+</body>
+</html>

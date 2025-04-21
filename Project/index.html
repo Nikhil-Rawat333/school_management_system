@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Management Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h2 class="logo">🎓 </h2>
+      <h1>SCHOOL <br>MANAGEMENT <br>SYSTEM</h1>
+      <p>Kanpur Institute of Technology,<br>Govt. of Kanpur</p>
+    </div>
+
+    <form action="dashboard.html" class="login-form">
+      <label>Student ID</label>
+      <input type="text" placeholder="Enter Your ID" required />
+
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+
+      <!-- <label><input type="checkbox" onclick="togglePassword()"> Show Password</label> -->
+
+      <label>Captcha <span class="required">*</span></label>
+      <div class="captcha-box">46846</div>
+      <input type="text" placeholder="Enter captcha" required />
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword() {
+      var pwd = document.getElementById("password");
+      pwd.type = pwd.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+</html>
